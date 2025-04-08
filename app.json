@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "painteer",
-    "slug": "painteer",
+    "name": "painteer-front",
+    "slug": "painteer-front",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
