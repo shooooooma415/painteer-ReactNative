@@ -1,22 +1,15 @@
 import { registerRootComponent } from "expo";
-import { StatusBar } from "expo-status-bar";
+import Footer from "../components/Footer";
+import React from "react";
 import {
   StyleSheet,
-  type ImageSourcePropType,
-  Image,
-  View,
+  View
 } from "react-native";
-
-const PlaceholderImage =
-  require("@/assets/images/background-image.png") as ImageSourcePropType;
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.imageContainer}>
-        <Image source={PlaceholderImage} style={styles.image} />
-      </View>
-      <StatusBar style="auto" />
+      <Footer />
     </View>
   );
 };
@@ -27,15 +20,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
-  },
-  imageContainer: {
-    flex: 1,
-    paddingTop: 58,
-  },
-  image: {
-    width: 320,
-    height: 440,
-    borderRadius: 18,
   },
 });
 
