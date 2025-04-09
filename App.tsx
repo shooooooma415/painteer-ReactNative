@@ -15,7 +15,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <View style={{ flex: 1 }}>
-        <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Navigator screenOptions={{ animation:'fade', headerShown: false }}>
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="Post" component={Post} />
           <Stack.Screen name="Profile" component={Profile} />
