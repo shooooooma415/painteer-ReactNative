@@ -1,19 +1,21 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { CircleUserRound, SquarePlus, MapPinned } from 'lucide-react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const Footer = () => {
+  const navigation = useNavigation<any>();
   return (
     <View style={styles.footer}>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Home')}>
         <MapPinned size={30} color="#333" />
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Post')}>
         <SquarePlus size={30} color="#333" />
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Profile')}>
         <CircleUserRound size={30} color="#333" />
       </TouchableOpacity>
     </View>
