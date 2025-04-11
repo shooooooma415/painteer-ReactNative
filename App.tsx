@@ -1,17 +1,18 @@
 import React from 'react';
+import { registerRootComponent } from 'expo';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Home from './src/screens/Home.js';
-import Post from './src/screens/Post.js';
-import Profile from './src/screens/Profile.js';
-import Footer from './src/components/Footer.js';
+import Home from './src/screens/Home.tsx';
+import Post from './src/screens/Post.tsx';
+import Profile from './src/screens/Profile.tsx';
+import Footer from './src/components/Footer.tsx';
 
 import { View } from 'react-native';
 
 const Stack = createNativeStackNavigator();
 
-export default function App() {
+function App() {
   return (
     <NavigationContainer>
       <View style={{ flex: 1 }}>
@@ -25,3 +26,5 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+export default registerRootComponent(App);
