@@ -8,6 +8,7 @@ import{
   MESSAGING_SENDER_ID,
   APP_ID,
   MEASUREMENT_ID,
+  CLIENT_ID,
 } from '@env';
 
 
@@ -19,6 +20,7 @@ const firebaseConfig = {
   messagingSenderId: MESSAGING_SENDER_ID,
   appId: APP_ID,
   measurementId: MEASUREMENT_ID,
+  clientId: CLIENT_ID,
 };
 
 export const firebaseApp = initializeApp(firebaseConfig);
