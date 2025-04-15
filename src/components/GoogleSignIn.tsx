@@ -2,11 +2,10 @@ import React from 'react'
 import { View, Button, StyleSheet, Alert } from 'react-native'
 import { GoogleSignin } from '@react-native-google-signin/google-signin'
 import { getAuth, GoogleAuthProvider, signInWithCredential } from 'firebase/auth'
-import { firebaseApp } from '../libs/firebase.ts'
-import { CLIENT_ID } from '@env'
+import { firebaseApp,firebaseConfig } from '../libs/firebase.ts'
 
 GoogleSignin.configure({
-  webClientId: CLIENT_ID,
+  webClientId: firebaseConfig.clientId,
 })
 
 export default function GoogleSignIn() {
