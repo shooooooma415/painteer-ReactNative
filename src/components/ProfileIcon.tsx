@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ccc',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 100,  // 上から100
+    marginTop: 128,
     alignSelf: 'center', // 中央揃え
   },
   iconText: {
